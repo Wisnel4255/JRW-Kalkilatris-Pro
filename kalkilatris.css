@@ -17,7 +17,7 @@ body {
 }
 
 .calculator {
-  background: white;
+  background: linear-gradient(135deg, #1a0033, #5500aa); /* fonse ak violet */
   padding: 20px;
   border-radius: 12px;
   width: 360px;
