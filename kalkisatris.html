@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JRW Kalkilatris Pro</title>
+  <meta name="theme-color" content="#5500aa">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
+<link rel="apple-touch-startup-image" href="icons/splash-1024.png">
+
   <link rel="stylesheet" href="kalkilatris.css">
   <link rel="manifest" href="manifest.json">
 <script>
@@ -13,6 +19,8 @@
   }
 </script>
 
+
+
 </head>
 <body>
   <div class="calculator">
@@ -20,22 +28,35 @@
     
     <!-- Ekran pou ekspresyon + rezilta -->
     <div class="display" id="display">0</div>
-    
+  
     <!-- Bouton yo -->
     <div class="buttons">
+      <!-- Premye ranje -->
       <button>(</button><button>)</button><button>[</button><button>]</button>
+      <!-- Dezyèm ranje -->
       <button>^</button><button>√</button><button>%</button><button>/</button>
+      <!-- Twazyèm ranje -->
       <button>7</button><button>8</button><button>9</button><button>*</button>
+      <!-- Katriyèm ranje -->
       <button>4</button><button>5</button><button>6</button><button>-</button>
+      <!-- Senkyèm ranje -->
       <button>1</button><button>2</button><button>3</button><button>+</button>
+      <!-- Sizyèm ranje -->
       <button>0</button><button>.</button><button>C</button><button>=</button>
+      <!-- Fonksyon trigonometrik -->
       <button>sin</button><button>cos</button><button>tan</button><button>log</button>
-      <button>ln</button><button>π</button><button>EXP</button><button>Ans</button>
-      <button>DEL</button><button id="backspace">Backspace</button>
+      <!-- Fonksyon avanse -->
+      <button>ln</button><button>!</button><button>EXP</button><button>Ans</button>
+      <!-- Bouton efase -->
+      <button>DEL</button><button>Backspace</button>
+      <!-- Bouton AI -->
+      <button class="ai" onclick="solveWithAI()">Rezoud ak AI</button>
     </div>
   </div>
 
+  <!-- Math.js pou kalkil -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+  <!-- Script kalkilatris -->
   <script src="kalkilatris.js"></script>
 </body>
 </html>
